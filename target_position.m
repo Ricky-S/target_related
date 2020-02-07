@@ -6,7 +6,7 @@ clear all;
 clc;
 tic;
 video_file='1_14.37.42.avi_fps25.avi'; %file name
-video=VideoReader(video_file);
+video=VideoReader(video_file);%read file
 frame_number=floor(video.Duration * video.FrameRate); % video.numberofframes
 
 for i=1:frame_number
