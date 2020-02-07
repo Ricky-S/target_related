@@ -17,7 +17,7 @@ for i=1:frame_number
     xfinal(i) = mean(x);
     yfinal(i) = mean(y);
 end
-time = toc;
+time = toc;%get processing time
 tim = video.Duration;
 yfinal(frame_number+1) = time;
 xfinal(frame_number+1) = tim;
